@@ -13,6 +13,20 @@
           "php": ">=8.0"
         }
       }
+    },
+    "agemdum/agendum-mcp-server": {
+      "0.1.0": {
+        "name": "agendum/agendum-mcp-server",
+        "version": "0.1.0",
+        "source": {
+          "type": "git",
+          "url": "git@github.com:Agendum360/agendum-mcp-server.git",
+          "reference": "main"
+        },
+        "require": {
+          "php": ">=8.0"
+        }
+      }
     }
   },
   "includes": {}
