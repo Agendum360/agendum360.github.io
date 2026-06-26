@@ -1,6 +1,6 @@
 {
   "packages": {
-    "agemdum/agendum-ddt-module": {
+    "agendum/agendum-ddt-module": {
       "0.1.0": {
         "name": "agendum/agendum-ddt-module",
         "type": "agendum-module",
@@ -15,7 +15,7 @@
         }
       }
     },
-    "agemdum/agendum-mcp-server": {
+    "agendum/agendum-mcp-server": {
       "0.1.0": {
         "name": "agendum/agendum-mcp-server",
         "type": "agendum-module",
