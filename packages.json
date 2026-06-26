@@ -3,30 +3,96 @@
     "agendum/agendum-ddt-module": {
       "0.1.0": {
         "name": "agendum/agendum-ddt-module",
-        "type": "agendum-module",
+        "description": "Skeleton module for Verbania framework",
         "version": "0.1.0",
         "source": {
           "type": "git",
-          "url": "git@github.com:Agendum360/agendum-ddt-module.git",
-          "reference": "main"
+          "url": "https://github.com/Agendum360/agendum-ddt-module.git",
+          "reference": "e40a22a686c0ef7dc5120fbb1aa5804beaf4d126"
         },
-        "require": {
-          "php": ">=8.0"
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/Agendum360/agendum-ddt-module/zipball/e40a22a686c0ef7dc5120fbb1aa5804beaf4d126",
+          "reference": "e40a22a686c0ef7dc5120fbb1aa5804beaf4d126",
+          "shasum": ""
         }
       }
     },
     "agendum/agendum-mcp-server": {
       "0.1.0": {
         "name": "agendum/agendum-mcp-server",
+        "description": "Agendum MCP server module",
         "type": "agendum-module",
+        "keywords": [
+          "agendum",
+          "module",
+          "skeleton",
+          "framework"
+        ],
+        "license": "MIT",
+        "authors": [
+          {
+            "name": "Francesco",
+            "email": "francesco@example.com"
+          }
+        ],
+        "require": {
+          "php": "^8.1",
+          "ext-json": "*",
+          "agendum/agendum-sdk": "^0.1.0",
+          "webonyx/graphql-php": "^15.0"
+        },
+        "require-dev": {
+          "pestphp/pest": "^4.1",
+          "pestphp/pest-plugin-browser": "^4.1",
+          "phpstan/phpstan": "^2.1"
+        },
+        "autoload": {
+          "psr-4": {
+            "Agendum\\McpServer\\": "src/"
+          },
+          "files": [
+            "src/aliases.php"
+          ]
+        },
+        "autoload-dev": {
+          "psr-4": {
+            "Agendum\\McpServer\\Tests\\": "tests/",
+            "Tests\\": "tests/"
+          }
+        },
+        "scripts": {
+          "post-create-project-cmd": [
+            "php setup.php"
+          ]
+        },
+        "config": {
+          "sort-packages": true,
+          "optimize-autoloader": true,
+          "classmap-authoritative": true,
+          "allow-plugins": {
+            "pestphp/pest-plugin": true
+          }
+        },
+        "minimum-stability": "stable",
+        "prefer-stable": true,
+        "extra": {
+          "agendum": {
+            "module-class": "Agendum\\McpServer\\Module",
+            "service-provider": "Agendum\\McpServer\\Providers\\AgendumModuleServiceProvider"
+          }
+        },
         "version": "0.1.0",
         "source": {
           "type": "git",
-          "url": "git@github.com:Agendum360/agendum-mcp-server.git",
-          "reference": "main"
+          "url": "https://github.com/Agendum360/agendum-mcp-server.git",
+          "reference": "2c9dc4887f7921794c582d0e1ca5e6333e179365"
         },
-        "require": {
-          "php": ">=8.0"
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/Agendum360/agendum-mcp-server/zipball/2c9dc4887f7921794c582d0e1ca5e6333e179365",
+          "reference": "2c9dc4887f7921794c582d0e1ca5e6333e179365",
+          "shasum": ""
         }
       }
     }
