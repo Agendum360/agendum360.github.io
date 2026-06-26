@@ -3,6 +3,7 @@
     "agemdum/agendum-ddt-module": {
       "0.1.0": {
         "name": "agendum/agendum-ddt-module",
+        "type": "agendum-module",
         "version": "0.1.0",
         "source": {
           "type": "git",
@@ -17,6 +18,7 @@
     "agemdum/agendum-mcp-server": {
       "0.1.0": {
         "name": "agendum/agendum-mcp-server",
+        "type": "agendum-module",
         "version": "0.1.0",
         "source": {
           "type": "git",
